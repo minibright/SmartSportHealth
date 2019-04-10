@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+        compileSdkVersion rootProject.ext.android.compileSdkVersion
+        buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+        defaultConfig {
+            minSdkVersion rootProject.ext.android.minSdkVersion
+            targetSdkVersion rootProject.ext.android.targetSdkVersion
+            versionCode rootProject.ext.android.versionCode
+            versionName rootProject.ext.android.versionName
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+            multiDexEnabled true
+            //Arouter路由配置
+            javaCompileOptions {
+                annotationProcessorOptions {
+                    arguments = [moduleName: project.getName()]
+                }
+            }
+
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+    }
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+        api project(':lib_opensource')
+        //Arouter路由
+        annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
+        api rootProject.ext.dependencies["arouter_api"]
+        api rootProject.ext.dependencies["arouter_annotation"]
+        //黄油刀
+        annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
+        //room数据库
+        annotationProcessor rootProject.ext.dependencies["room.compiler"]
+
+    }

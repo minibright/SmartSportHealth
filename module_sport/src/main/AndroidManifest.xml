@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bright.module_sport">
+    <application>
+      <!--  <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Futs6OSiaKaAD5GFhT8Po8Q7UIoEi8GP" />
+        &lt;!&ndash; 定位的service &ndash;&gt;
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"
+            tools:ignore="WrongManifestParent"/>-->
+        <activity android:name="com.bright.module_sport.activity.DynamicMapTrace"/>
+    </application>
+</manifest>

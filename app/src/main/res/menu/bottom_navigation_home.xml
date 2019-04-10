@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab_home"
+        android:enabled="true"
+        android:icon="@drawable/rb_homepage_drawable_selector"
+        android:title="首页"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/tab_sport"
+        android:enabled="true"
+        android:icon="@drawable/rb_play_drawable_selector"
+        android:title="运动"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/tab_setting"
+        android:enabled="true"
+        android:icon="@drawable/rb_setting_drawable_selector"
+        android:title="设置"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/tab_self"
+        android:enabled="true"
+        android:icon="@drawable/rb_mine_drawable_selector"
+        android:title="我的"
+        app:showAsAction="ifRoom" />
+</menu>

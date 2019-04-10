@@ -1,0 +1,2 @@
+include ':app',':FastBleLib', ':lib_common', ':lib_coremodel', ':module_main',':module_sport',':module_setting',':module_mine', ':lib_opensource'
+

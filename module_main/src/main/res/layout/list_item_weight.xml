@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+   android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/reservation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/datatime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#f17539"
+            android:textSize="14sp"
+            android:drawablePadding="5dp"
+            android:text="2018年 6月20日" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lightgrey" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/baby_weight_img"/>
+        <TextView
+            android:id="@+id/weight_time"
+            android:layout_below="@+id/icon"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="17:20:12"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:textSize="11sp"/>
+        <TextView
+            android:id="@+id/weight"
+           android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:ems="1"
+            android:textSize="15sp"
+            android:text="体重"/>
+        <TextView
+            android:id="@+id/weight_value"
+            android:layout_toEndOf="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#f17539"
+            android:text="50kg"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next_img"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
